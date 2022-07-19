@@ -691,7 +691,28 @@ input.form-control {
     display: flex;
     justify-content: center;
 }
+.estatutos__card{
+    margin: 0 auto;
+}
 .estatutos__embed{
+    display: none;
+}
+@media (min-width: 768px) { 
+    .estatutos__card{
+        display: none;
+    }
+    .estatutos__embed{
+        display: block;
+        width: 100%;
+        min-height: 660px;
+    }
+}
+.btn-estatutos{
+    background-color: var(--brand);
+    color: #fff;
     width: 100%;
-    min-height: 660px;
+}
+.btn-estatutos:hover{
+    background-color: #185ec9;
+    color: #fff;
 }
