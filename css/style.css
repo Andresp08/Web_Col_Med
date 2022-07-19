@@ -15,7 +15,7 @@ body {
     line-height: 1.7;
 }
 
-h1,h2,h3,h4,h5,h6,
+h1,h2,h3,h5,h6,
 .display-1,.display-2,.display-3,.display-4 {
     font-weight: 700;
     color: var(--dark);
@@ -44,6 +44,11 @@ a:hover {
 section {
     padding-top: 80px;
     padding-bottom: 80px;
+}
+
+/*remove padding casos exito - colegio medico*/
+.no-padding{
+    padding-top: unset;
 }
 
 .text-brand {
@@ -223,14 +228,16 @@ text-align: center;}
 }
 
 .info-box {
-    align-items: center;
     display: flex;
+    align-items: center;
 }
 
 .info-box img {
     width: 90px;
 }
 
+
+/*Números que nos caracterizan*/
 
 #milestone {
     /* background: linear-gradient(rgba(39, 6, 226, 0.85), rgba(31, 25, 119, 0.85)), url(../img/bg_banner1.jpg); */
@@ -244,6 +251,8 @@ text-align: center;}
 #milestone p {
     color: #fff;
 }
+
+/*Servicios*/
 
 .service {
     padding: 32px;
@@ -303,6 +312,8 @@ text-align: center;}
     color: #fff;
 }
 
+/*Equipo*/
+
 .team-member {
     text-align: center;
 }
@@ -353,6 +364,8 @@ text-align: center;}
     top: 0%;
     opacity: 1;
 }
+
+/*Reviews*/
 
 #reviews {
 
@@ -412,6 +425,9 @@ text-align: center;}
     color: var(--brand);
 }
 
+
+/*Blogs*/
+
 .blog-post {
     position: relative;
     background-color: #fff;
@@ -444,12 +460,24 @@ text-align: center;}
     text-decoration: underline;
 }
 
+/*Footer*/
+
 footer {
     background: linear-gradient(0deg, rgba(8, 32, 50, 0.9), rgba(8, 32, 50, 0.9)), url(../img/bg_banner1.jpg), #082032;;
     /* background: linear-gradient(30deg, rgba(20, 78, 204, 0) 0%, var(--brand) 100%), url(../img/bg_banner1.jpg), var(--brand); */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+.centrar{
+    display: flex;
+    align-items: center;
+}
+@media (min-width: 768px) { 
+    .centrar{
+        text-align: center;
+    }
 }
 
 footer .footer-top {
@@ -469,6 +497,38 @@ footer .navbar-brand {
 
 footer p {
     color: #fff;
+}
+
+.footer__info{
+    text-align: center;
+}
+
+.footer__contacto,
+.footer__horarios{
+    margin-top: 2rem;
+}
+
+.footer__contacto h4{
+    margin-bottom: 2rem;
+}
+.footer__horarios h4{
+    margin-bottom: 3rem;
+}
+.footer__horarios h4,
+.footer__contacto h4{
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+@media (min-width: 768px) { 
+    .footer__contacto,
+    .footer__horarios{
+        margin-top: unset;
+    }   
+}
+
+.footer__correo{
+    font-size: .9rem;
 }
 
 footer .social-icons a {
@@ -510,4 +570,128 @@ input.form-control {
 .form-control:focus {
     box-shadow: none;
     border-color: var(--brand);
+}
+
+
+/*Nosotros.html*/
+.hero__nosotros{
+    background: linear-gradient(180deg, rgba(20, 78, 204, 0) 0%, var(--brand) 100%), url(../img/fondo_nosotros.jpg), var(--brand);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 14rem 0;
+    display: flex;
+    justify-content: center;
+}
+.hero__texto{
+    font-size: 2rem;
+    color: #fff;
+    text-transform: uppercase;
+}
+@media (min-width: 768px) { 
+    .nosotros__texto{
+        font-size: 5rem;
+    }
+}
+.mision__title{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+.imagen-contexto{
+    width: 15rem;
+    margin: 0 auto;
+}
+@media (min-width: 768px) { 
+    .imagen-contexto{
+        width: unset;
+        height: 10rem;
+    }
+}
+.mision-contenedor,
+.vision-contenedor{
+    padding: 1rem .7rem;
+}
+.text-justify{
+    text-align: justify!important;
+    line-height: 1.8;
+    font-size: 1.2rem;
+    color: #082032;
+}
+@media (min-width: 768px) { 
+    .text-justify{
+        font-size: 1.2rem;
+    }
+}
+@media (min-width: 768px) { 
+    .nosotros__title{
+        margin-top: 3rem;
+    }
+}
+.nosotros__contenedor{
+    padding: 0 2rem;
+}
+@media (min-width: 768px) {
+    .nosotros__contenedor{
+        padding: 1rem 5rem;
+    } 
+}
+
+/*Afilicaciones*/
+.hero__afiliaciones{
+    background: linear-gradient(180deg, rgba(20, 78, 204, 0) 0%, var(--brand) 100%), url(../img/afilicacion.jpg), var(--brand);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 14rem 0;
+    display: flex;
+    justify-content: center;
+}
+.hero__texto{
+    font-size: 2rem;
+    color: #fff;
+    text-transform: uppercase;
+}
+@media (min-width: 768px) { 
+    .hero__texto{
+        font-size: 5rem;
+    }
+}
+.afiliaciones{
+    padding: 5rem 2rem;
+}
+.afliciaciones__heading{
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+.afiliaciones__parrafo{
+    text-align: justify;
+}
+.afiliaciones__span{
+    font-weight: 700;
+}
+.afiliaciones__correspondencia{
+    text-align: center;
+    text-transform: uppercase;
+    margin: 2rem 0;
+    color: var(--dark);
+    font-weight: 700;
+}
+
+
+/*Estatutos*/
+.hero__estatutos{
+    background: linear-gradient(180deg, rgba(20, 78, 204, 0) 0%, var(--brand) 100%), url(../img/estatutos.jpg), var(--brand);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 14rem 0;
+    display: flex;
+    justify-content: center;
+}
+.estatutos__embed{
+    width: 100%;
+    min-height: 660px;
 }
