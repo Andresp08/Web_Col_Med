@@ -65,6 +65,12 @@ section {
   width: 60px;
 }
 
+@media (min-width: 900px) { 
+  .logo-institucion{
+    width: 140px;
+  }
+}
+
 .hero-slider .owl-prev,
 .hero-slider .owl-next {
   background-color: rgba(255, 255, 255, 0.3) !important;
@@ -146,10 +152,8 @@ section {
   font-size: 1rem;
 }
 .img_about {
-  border-top-left-radius: 10rem;
-  border-top-right-radius: 1rem;
-  border-bottom-right-radius: 10rem;
-  border-bottom-left-radius: 3rem;
+  border-radius: 10rem 1rem 10rem 3rem;
+  
 }
 
 /* navbar */
@@ -676,6 +680,17 @@ input.form-control {
     padding: 1rem 5rem;
   }
 }
+@media (min-width: 900px) { 
+  .team-member{
+    min-height: 500px;
+  }
+  .image{
+    min-height: 500px;
+    max-height: 500px;
+    object-fit: contain;
+  }
+}
+
 
 /*Afilicaciones*/
 .hero__afiliaciones {
