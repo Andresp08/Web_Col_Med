@@ -682,24 +682,28 @@ input.form-control {
 }
 @media (min-width: 900px) { 
   .team-member{
-    min-height: 300px;
-    max-height: 600px;
+    min-height: 400px;
+    max-height: 400px;
   }
   .image{
-    min-height: 500px;
-    max-height: 500px;
+    min-height: 400px;
+    max-height: 400px;
     object-fit: contain;
   }
 }
 
 .team-member .image img{
-  border-radius: 80%;
+  border-radius: 50%;
   overflow: hidden;
 }
 
-.img-sandra{
-  height: 500px;
+.image img{
+  height: 300px;
 }
+
+/* .img-sandra{
+  height: 500px;
+} */
 
 
 /*Afilicaciones*/
