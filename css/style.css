@@ -682,13 +682,23 @@ input.form-control {
 }
 @media (min-width: 900px) { 
   .team-member{
-    min-height: 500px;
+    min-height: 300px;
+    max-height: 600px;
   }
   .image{
     min-height: 500px;
     max-height: 500px;
     object-fit: contain;
   }
+}
+
+.team-member .image img{
+  border-radius: 80%;
+  overflow: hidden;
+}
+
+.img-sandra{
+  height: 500px;
 }
 
 
